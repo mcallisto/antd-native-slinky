@@ -1,4 +1,4 @@
-# react-router-native-slinky
+# antd-native-slinky
 Antd-native bindings for slinky (powered by ScalablyTyped)
 
 It is distributed for Scala 2.13 and Scala.js 1
