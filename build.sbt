@@ -3,14 +3,14 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.2"
 name := "antd-native-slinky"
-version := "0.1.0"
+version := "0.1.1"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
-  "@types/react" -> "16.9.34",
-  "@types/react-native" -> "^0.60.25",
-  "@ant-design/icons-react-native" -> "1.0.2",
-  "@ant-design/react-native" -> "3.1.10"
+  "@types/react" -> "16.9.42",
+  "@types/react-native" -> "^0.62.4",
+  "@ant-design/icons-react-native" -> "2.0.0",
+  "@ant-design/react-native" -> "3.3.0"
 )
 
 /* disabled because it somehow triggers many warnings */
@@ -19,13 +19,11 @@ scalaJSLinkerConfig ~= (_.withSourceMap(false))
 // because npm is slow
 useYarn := true
 
-stExperimentalEnableImplicitOps := true
-
 // say we want custom code for slinky
 stFlavour := Flavour.SlinkyNative
 
 // focus only on these libraries
-stMinimize := Selection.AllExcept("@ant-design/react-native")
+stMinimize := Selection.AllExcept("@ant-design/react-native", "@ant-design/icons-react-native")
 
 // shade into another package
 stOutputPackage := "vision.id.antdrn.facade"
