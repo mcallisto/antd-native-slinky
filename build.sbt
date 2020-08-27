@@ -3,14 +3,19 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.2"
 name := "antd-native-slinky"
-version := "0.1.1"
+version := "0.1.2"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
   "@types/react" -> "16.9.42",
   "@types/react-native" -> "^0.62.4",
-  "@ant-design/icons-react-native" -> "2.0.0",
-  "@ant-design/react-native" -> "3.3.0"
+  "@ant-design/icons-react-native" -> "2.2.1",
+  "@ant-design/react-native" -> "4.0.5",
+  "@react-native-community/cameraroll" -> "4.0.0",
+  "@react-native-community/picker" -> "1.6.6",
+  "@react-native-community/segmented-control" -> "2.1.1",
+  "@react-native-community/slider" -> "3.0.3",
+  "@react-native-community/viewpager" -> "4.1.6",
 )
 
 /* disabled because it somehow triggers many warnings */
