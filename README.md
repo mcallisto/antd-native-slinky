@@ -1,6 +1,6 @@
 # antd-native-slinky
 
-Antd-native 4.0.5 bindings for slinky (powered by ScalablyTyped)
+[Antd-native](https://rn.mobile.ant.design/docs/react/introduce) 4.0.5 bindings for slinky (powered by ScalablyTyped)
 
 It is distributed for Scala 2.13 and Scala.js 1
 
