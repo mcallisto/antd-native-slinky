@@ -1,14 +1,14 @@
 /* ScalablyTyped configuration */
 enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
-scalaVersion := "2.13.2"
+scalaVersion := "2.13.3"
 name := "antd-native-slinky"
-version := "0.1.2"
+version := "0.1.3"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
-  "@types/react" -> "16.9.42",
-  "@types/react-native" -> "^0.62.4",
+  "@types/react" -> "~16.9.41",
+  "@types/react-native" -> "~0.62.13",
   "@ant-design/icons-react-native" -> "2.2.1",
   "@ant-design/react-native" -> "4.0.5",
   "@react-native-community/cameraroll" -> "4.0.0",
