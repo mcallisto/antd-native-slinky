@@ -3,7 +3,7 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.3"
 name := "antd-native-slinky"
-version := "0.1.3"
+version := "0.1.4"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
@@ -16,6 +16,7 @@ Compile / npmDependencies ++= Seq(
   "@react-native-community/segmented-control" -> "2.1.1",
   "@react-native-community/slider" -> "3.0.3",
   "@react-native-community/viewpager" -> "4.1.6",
+  "moment" -> "2.29.1"
 )
 
 /* disabled because it somehow triggers many warnings */
@@ -28,7 +29,7 @@ useYarn := true
 stFlavour := Flavour.SlinkyNative
 
 // focus only on these libraries
-stMinimize := Selection.AllExcept("@ant-design/react-native", "@ant-design/icons-react-native")
+stMinimize := Selection.AllExcept("@ant-design/react-native", "@ant-design/icons-react-native", "moment")
 
 // shade into another package
 stOutputPackage := "vision.id.antdrn.facade"

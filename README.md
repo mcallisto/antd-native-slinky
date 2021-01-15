@@ -7,7 +7,7 @@ It is distributed for Scala 2.13 and Scala.js 1
 ```
 resolvers += Resolver.bintrayRepo("mcallisto", "libs")
 libraryDependencies ++= Seq(
-    "default" %%% "antd-native-slinky" % "0.1.3" 
+    "default" %%% "antd-native-slinky" % "0.1.4" 
 ) 
 ```
 
@@ -17,6 +17,7 @@ See the following compilation output:
 
 ```
 [warn] Wrote @ant-design/icons-react-native (21 files)
+[warn] Wrote moment (153 files)
 [warn] Wrote @ant-design/react-native (773 files)
 [warn] Wrote minimized @react-native-community/cameraroll (0 files)
 [warn] Wrote minimized prop-types (4 files)
@@ -29,8 +30,8 @@ See the following compilation output:
 [warn] Wrote minimized @react-native-community/picker (12 files)
 [warn] Wrote minimized react-native-modal-popover (29 files)
 [warn] Wrote minimized react (33 files)
-[warn] Wrote minimized std (11 files)
-[warn] Wrote minimized csstype (487 files)
+[warn] Wrote minimized std (12 files)
+[warn] Wrote minimized csstype (489 files)
 [warn] Wrote minimized react-native (320 files)
 
 ```
